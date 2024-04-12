@@ -115,7 +115,7 @@ namespace GithubActionsLab
         public void Power_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
-            Assert.Throws<ArgumentNullException>(() => Program.Power("1", "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
     }
