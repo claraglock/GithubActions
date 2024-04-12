@@ -100,7 +100,7 @@ namespace GithubActionsLab
         public void Power_Valid()
         {
             Assert.AreEqual(2, Program.Power("2", "1"));
-            Assert.AreEqual(100, Program.Power("10", "2"));
+            Assert.AreEqual(10, Program.Power("10", "2"));
             Assert.AreEqual(9, Program.Power("3", "3"));
         }
 
@@ -115,7 +115,7 @@ namespace GithubActionsLab
         public void Power_Null()
         {
             Assert.Throws<ArgumentNullException>(() => Program.Power("1", null));
-            Assert.Throws<ArgumentNullException>(() => Program.Power("1", "1"));
+            Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
     }
