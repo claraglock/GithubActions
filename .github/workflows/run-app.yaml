@@ -1,4 +1,4 @@
-name: 'Run App ClaraGlock'
+name: 'Basic Action'
 
 on: [push, pull_request]
 
